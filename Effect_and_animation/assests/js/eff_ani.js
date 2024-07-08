@@ -34,3 +34,21 @@ $(document).ready(function () {
         $("#div3").fadeIn(3000);
     });
 });
+
+//Fade Out :- The jQuery fadeOut() method is used to fade out a visible element.
+$(document).ready(function () {
+    $("button").click(function () {
+        $("#div4").fadeOut();
+        $("#div5").fadeOut("slow");
+        $("#div6").fadeOut(3000);
+    });
+});
+
+//Fade Toggle :- The jQuery fadeToggle() method toggles between the fadeIn() and fadeOut() methods.
+$(document).ready(function () {
+    $("button").click(function () {
+        $("#div7").fadeToggle();
+        $("#div8").fadeToggle("slow");
+        $("#div9").fadeToggle(3000);
+    });
+});
