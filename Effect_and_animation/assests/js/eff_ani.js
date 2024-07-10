@@ -52,3 +52,22 @@ $(document).ready(function () {
         $("#div9").fadeToggle(3000);
     });
 });
+
+//Fade To :- The jQuery fadeTo() method allows fading to a given opacity (value between 0 and 1).
+$(document).ready(function () {
+    $("button").click(function () {
+        $("#div10").fadeTo("slow", 0.15);
+        $("#div11").fadeTo("slow", 0.4);
+        $("#div12").fadeTo("slow", 0.7);
+    });
+});
+
+// Slide Method :- 
+
+//Slide Down :- The jQuery slideDown() method is used to slide down an element.
+$(document).ready(function () {
+    $("#flip").click(function () {
+        $("#panel").slideDown("slow");
+    });
+});
+
