@@ -235,3 +235,18 @@ $(document).ready(function () {
         $(".mul").css({ "background-color": "purple", "font-size": "200%" });
     });
 });
+
+// Dimensions :- 
+
+/*
+
+width() :- method sets or returns the width of an element (excludes padding, border and margin).
+height() :- method sets or returns the height of an element (excludes padding, border and margin).
+innerWidth() :- method returns the width of an element (includes padding).
+innerHeight() :- method returns the height of an element (includes padding).
+outerWidth() :- method returns the width of an element (includes padding and border).
+outerHeight() :- method returns the height of an element (includes padding and border).
+outerWidth(true) :- method returns the width of an element (includes padding, border, and margin).
+outerHeight(true) :- method returns the height of an element (includes padding, border, and margin).
+
+ */
