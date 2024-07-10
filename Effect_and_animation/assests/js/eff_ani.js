@@ -71,3 +71,113 @@ $(document).ready(function () {
     });
 });
 
+//Slide Up :- The jQuery slideUp() method is used to slide up an element.
+$(document).ready(function () {
+    $("#flip1").click(function () {
+        $("#panel1").slideUp("slow");
+    });
+});
+
+//Slide Toggle :- The jQuery slideToggle() method toggles between the slideDown() and slideUp() methods.
+$(document).ready(function () {
+    $("#flip2").click(function () {
+        $("#panel2").slideToggle("slow");
+    });
+});
+
+
+//Animation 
+
+//Animate method :- The jQuery animate() method is used to create custom animations.
+//Syntax :-  $(selector).animate({params},speed,callback); (The required params parameter defines the CSS properties to be animated.)
+$(document).ready(function () {
+    $("button").click(function () {
+        $("div").animate({ left: '250px' });
+    });
+});
+
+//animate() - Manipulate Multiple Properties :- Notice that multiple properties can be animated at the same time:
+$(document).ready(function () {
+    $("button").click(function () {
+        $("div").animate({
+            left: '250px',
+            opacity: '0.5',
+            height: '150px',
+            width: '150px'
+        });
+    });
+});
+
+//animate() - Using Relative Values :- It is also possible to define relative values (the value is then relative to the element's current value). This is done by putting += or -= in front of the value:
+$(document).ready(function () {
+    $("button").click(function () {
+        $("div").animate({
+            left: '250px',
+            height: '+=150px',
+            width: '+=150px'
+        });
+    });
+});
+
+//animate() - Using Pre-defined Values :- You can even specify a property's animation value as "show", "hide", or "toggle":
+$(document).ready(function () {
+    $("button").click(function () {
+        $("div").animate({
+            height: 'toggle'
+        });
+    });
+});
+
+//animate() - Uses Queue Functionality :- By default, jQuery comes with queue functionality for animations. This means that if you write multiple animate() calls after each other, jQuery creates an "internal" queue with these method calls. Then it runs the animate calls ONE by ONE.
+$(document).ready(function () {
+    $("button").click(function () {
+        var div = $("div");
+        div.animate({ height: '300px', opacity: '0.4' }, "slow");
+        div.animate({ width: '300px', opacity: '0.8' }, "slow");
+        div.animate({ height: '100px', opacity: '0.4' }, "slow");
+        div.animate({ width: '100px', opacity: '0.8' }, "slow");
+    });
+});
+
+//Stop Method :- The jQuery stop() method is used to stop an animation or effect before it is finished. The stop() method works for all jQuery effect functions, including sliding, fading and custom animations.
+//Syntax :- $(selector).stop(stopAll,goToEnd);
+
+$(document).ready(function () {
+    $("#stp").click(function () {
+        $("#pl").slideDown(5000);
+    });
+    $("#stop").click(function () {
+        $("#pl").stop();
+    });
+});
+
+//Callback Functions :- JavaScript statements are executed line by line. However, with effects, the next line of code can be run even though the effect is not finished. This can create errors To prevent this, you can create a callback function.
+//A callback function is executed after the current effect is finished.
+//Syntax :- $(selector).hide(speed,callback);
+
+//The example below has a callback parameter that is a function that will be executed after the hide effect is completed:
+$(document).ready(function () {
+    $("button").click(function () {
+        $("p").hide("slow", function () {
+            alert("The paragraph is now hidden");
+        });
+    });
+});
+
+//The example below has no callback parameter, and the alert box will be displayed before the hide effect is completed:
+/*
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide(1000);
+    alert("The paragraph is now hidden");
+  });
+});
+*/
+
+//Chaining :- With jQuery, you can chain together actions/methods. Chaining allows us to run multiple jQuery methods (on the same element) within a single statement.
+$(document).ready(function () {
+    $("button").click(function () {
+        $("#chain").css("color", "red").slideUp(2000).slideDown(2000);
+    });
+});
+
