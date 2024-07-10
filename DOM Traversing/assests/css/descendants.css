@@ -1,4 +1,4 @@
-.ancestors * {
+.descendants * {
     display: block;
     border: 2px solid lightgrey;
     color: lightgrey;
@@ -6,19 +6,10 @@
     margin: 15px;
 }
 
-.par * {
+.desc1 * { 
     display: block;
     border: 2px solid lightgrey;
     color: lightgrey;
     padding: 5px;
     margin: 15px;
-}
-
-.anc * {
-    display: block;
-    border: 2px solid lightgrey;
-    color: lightgrey;
-    padding: 5px;
-    margin: 15px;
-}
-
+  }
