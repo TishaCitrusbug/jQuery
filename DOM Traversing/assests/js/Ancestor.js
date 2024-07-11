@@ -9,7 +9,7 @@ An ancestor is a parent, grandparent, great-grandparent, and so on.
 //parent() Method :- The parent() method returns the direct parent element of the selected element. This method only traverse a single level up the DOM tree.
 $(document).ready(function () {
     $("span").parent().css({ "color": "red", "border": "2px solid red" });
-});
+});1
 
 //parents() Method :- The parents() method returns all ancestor elements of the selected element, all the way up to the document's root element (<html>).
 // $(document).ready(function () {
