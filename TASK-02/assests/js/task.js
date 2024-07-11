@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
     // Step 1: Select the element with ID 'main-title'
     let mainTitle = $('#text');
