@@ -3,7 +3,7 @@
 // Syntax :- $(selector).load(URL,data,callback);
 $(document).ready(function () {
     $("button").click(function () {
-        $("#div1").load("jQuery\AJAX\assests\files\demo_test.txt");
+        $("#click").load('data_test.html');
     });
 });
 
