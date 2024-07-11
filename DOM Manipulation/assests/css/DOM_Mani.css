@@ -1,0 +1,16 @@
+.important {
+    font-weight: bold;
+    font-size: medium;
+  }
+  
+  .blue {
+    color: blue;
+  }
+
+  .pink {
+    color: rgb(255, 0, 149);
+  }
+
+  .purple{
+    color: blueviolet;
+  }

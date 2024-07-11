@@ -1,0 +1,23 @@
+#outer{
+    background-color: peachpuff;
+    height: 500px;
+    width: 1000px;
+}
+
+#inner{
+    background-color: plum;
+    height: 400px;
+    width: 900px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+}
+#inner div{
+    background-color: cornflowerblue;
+    height: 200px;
+    width: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+}
