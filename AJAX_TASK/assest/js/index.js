@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
     $.ajax({
-        url: 'https://jsonplaceholder.typicode.com/posts', // fetching data from the API using jQuery AJAX
+        url: 'https://jsonplaceholder.typicode.com/posts123', // fetching data from the API using jQuery AJAX
         method: 'GET',
         success: function(posts){
             // process the retrieved data
@@ -17,7 +17,7 @@ $(document).ready(function(){
                 $('#post-list').append(postElement);
             });
         },
-        error: function(){ 
+        error: function(error){ 
             // handled the errors
             console.error('Error fetching Data: ', error);
             $('#post-list').html('<p>Failed to load posts. Please try again later.</p>');
